@@ -1,0 +1,30 @@
+
+   <div>view4</div>
+   <input type="text" ng-model='pro' >
+<h1>{{alfie}}</h1>
+<div id="animcon">
+
+<div class="mainanim" ng-repeat="profile in profiles" ng-Mouseover="selected('{{profile.firstName}}','{{profile.lastName}}','{{profile.id}}')">
+
+<li><img src="{{profile.picture}}" width="70" height="70"> </li>
+<nav>
+<!-- 
+<li><img src="/assets/images/01.jpg" width="70" height="70" ></li>
+<li><img src="/assets/images/02.jpg" width="70" height="70" ></li>
+<li><img src="/assets/images/03.jpg" width="70" height="70" ></li>
+<li><img src="/assets/images/04.jpg" width="70" height="70" ></li>
+-->
+</nav>
+</div>
+</div>  
+<div id="conslide">
+<section class="slider" ng-repeat="profile in profiles | filter:profiles[id-1]" ng-animate=" 'animate' ">
+
+
+<div class="period"><img src="{{profile.picture}}" align="left"  >{{profile.bio}} </div>
+</section>  
+
+</div>
+ 
+    
+   

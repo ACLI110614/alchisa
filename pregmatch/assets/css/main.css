@@ -1,0 +1,110 @@
+/* 
+    Document   : main
+    Created on : 09 19, 13, 9:50:59 AM
+    Author     : alfie chiong
+    email : alfiechiong@gmail.com
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    -webkit-transition: width 500ms ease-out .1s;
+    -moz-transition: width 50ms ease-out .1s;
+    -o-transition: width 50ms ease-out .1s;
+    transition: width 500ms ease-out .1s;
+  
+}
+root,header,footer,article,nav,aside,section { 
+    display: block;
+}
+
+header{
+    
+}
+body{
+   
+}
+
+
+#main{
+    width:600px;
+    height:600px; 
+      
+}
+
+#clients{
+    background-color:#a30404;
+}
+
+
+
+#about{
+     background-color:#0414ae;
+}
+#services{
+     background-color:#ff9b21;
+}
+#contact_us{
+     background-color:#03ab13;
+}
+
+.center {
+    border: solid thin #ccc;
+   
+  /*specify width and heigh then subtract it to top and left*/
+  position: absolute;
+    
+    top:calc(50% - 600px/2);
+    left:calc(50% - 600px/2);
+}
+
+#main li{
+   width:290px;
+   height:290px;
+   float:left;
+   margin:5px;
+   list-style-type: none;
+   box-shadow: 5px 5px 5px #ccc;
+   position: relative;
+}
+#main li:hover{
+    width:1000px;
+}
+#clients:hover ~ #about{
+    width:1000px;  
+}
+
+.fix-bottom-left{
+    position: absolute;
+    bottom:5px;
+    left:10px;
+    color:#fff;
+    min-width:100px;
+    height:25px;
+}
+
+/*////////////////////////////////*/
+.animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+} 
+ 
+.animate-enter.animate-enter-active, 
+.animate-leave {
+    opacity: 1;
+    right: 0;
+    height: 30px;
+}
+ 
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    right: -50px;
+    height: 0px;
+}

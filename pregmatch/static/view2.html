@@ -1,0 +1,20 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div>view2</div>
+       <input type='text' ng-model='search'>
+        <section ng-repeat='post in posting | filter:search'>
+    <li>{{post.title}}</li>
+    
+</section>    
+    
+    </body>
+</html>
